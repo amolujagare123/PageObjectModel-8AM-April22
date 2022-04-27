@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import pages.AddClient;
 import pages.Login;
 import pages.Menu;
 import utility.DoLogin;
@@ -33,8 +34,30 @@ public class AddClientTest extends DoLogin {
     @Test
     public void addClientTest()
     {
-
         Menu menu = new Menu(driver);
         menu.clickAddCient();
+
+        AddClient addClient = new AddClient(driver);
+
+        addClient.setLanguage("Spanish");
+        addClient.setCountry("Israel");
+        addClient.setGender("Male");
+        addClient.setBirthDate("09/23/1985");
+       /* addClient.setClientName("Sandip");
+        addClient.setClientSurname("Aradhye");
+        addClient.setClientAdd1("xyz");
+        addClient.setClientAdd2("abcd");
+        addClient.setClientCity("Pune");
+        addClient.setClientState("MH");
+        addClient.setClientZip("411046");
+        addClient.setClientPhone("545445");
+        addClient.setClientFax("545445");
+        addClient.setClientMobile("545445");
+        addClient.setClientEmail("a@b.com");
+        addClient.setClientWeb("www.google.com");
+        addClient.setClientVat("454545");
+        addClient.setClientTax("989898");
+        addClient.clickBtnSave();*/
+
     }
 }
