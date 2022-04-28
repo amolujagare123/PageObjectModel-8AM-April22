@@ -39,17 +39,17 @@ public class AddClientTest extends DoLogin {
 
         AddClient addClient = new AddClient(driver);
 
-        addClient.setLanguage("Spanish");
-        addClient.setCountry("Israel");
-        addClient.setGender("Male");
-        addClient.setBirthDate("09/23/1985");
-       /* addClient.setClientName("Sandip");
+        addClient.setClientName("Sandip1");
         addClient.setClientSurname("Aradhye");
+        addClient.setLanguage("Spanish");
         addClient.setClientAdd1("xyz");
         addClient.setClientAdd2("abcd");
         addClient.setClientCity("Pune");
         addClient.setClientState("MH");
         addClient.setClientZip("411046");
+        addClient.setCountry("Israel");
+        addClient.setGender("Male");
+        addClient.setBirthDate("09/23/1985");
         addClient.setClientPhone("545445");
         addClient.setClientFax("545445");
         addClient.setClientMobile("545445");
@@ -57,7 +57,10 @@ public class AddClientTest extends DoLogin {
         addClient.setClientWeb("www.google.com");
         addClient.setClientVat("454545");
         addClient.setClientTax("989898");
-        addClient.clickBtnSave();*/
+        addClient.clickBtnSave();
+
+
+        menu.clickViewClient();
 
     }
 }

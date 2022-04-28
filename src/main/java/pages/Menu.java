@@ -32,7 +32,7 @@ public class Menu {
 
     public void clickViewClient()
     {
-        addClients.click();
+        clients.click();
         viewClients.click();
     }
 
