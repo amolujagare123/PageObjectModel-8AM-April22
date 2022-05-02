@@ -117,6 +117,9 @@ public class AddClient {
     @FindBy (xpath="//input[@id='client_tax_code']")
     WebElement clientTax;
 
+    @FindBy(xpath = "//input[@id='client_active']")
+    public WebElement activeCheckbox;
+
     public void setClientTax(String tax)
     {
         clientTax.sendKeys(tax);
@@ -135,6 +138,7 @@ public class AddClient {
 
     @FindBy (xpath="//input[@role='searchbox']")
     WebElement searchBox;
+
 
     WebDriver driver;
     public void setLanguage(String language)
